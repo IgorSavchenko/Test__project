@@ -1,0 +1,147 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+    link(rel="stylesheet" href="assets/css/main.min.css")
+    title= "Test__project"
+  body
+    //- aside block
+    aside
+      .logo
+        a(href='#').logo__reference
+          i.material-icons landscape
+          h1.logo__title logotype
+      nav.navigation
+        ul.navigation__list
+          li.navigation__item  
+            i.material-icons mail_outline
+            h3.navigation__subtitle Корреспонденция
+            ul.navigation__sublist
+              li.navigation__subitem  
+                a(href='#').navigation__reference  Входящие
+                span.circle.circle--red 6
+                span.circle.circle--blue 2
+              li.navigation__subitem  
+                a(href='#').navigation__reference  Исходящие
+                span.circle.circle--red 1
+              li.navigation__subitem  
+                a(href='#').navigation__reference  Черновики
+                p.abbr ЧЕ
+          li.navigation__item  
+            i.material-icons work
+            h3.navigation__subtitle Проекты
+            ul.navigation__sublist
+              li.navigation__subitem  
+                a(href='#').navigation__reference Список
+                p.abbr СП
+              li.navigation__subitem
+                a(href='#').navigation__reference Шаблоны отчетов
+                p.abbr ШО
+              li.navigation__subitem
+                a(href='#').navigation__reference  Конструктор отчетов
+                p.abbr КО
+          li.navigation__item  
+            i.material-icons share
+            h3.navigation__subtitle Иерархии
+          li.navigation__item
+            i.material-icons backup
+            h3.navigation__subtitle  База данных
+            ul.navigation__sublist
+              li.navigation__subitem  
+                a(href='#').navigation__reference  Записи
+                p.abbr ЗА
+              li.navigation__subitem.active  
+                a(href='#').navigation__reference  Атрибуты
+                p.abbr АТ
+              li.navigation__subitem  
+                a(href='#').navigation__reference  Словари
+                p.abbr СЛ
+              li.navigation__subitem  
+                a(href='#').navigation__reference  Выборки
+                p.abbr ВЫ
+          li.navigation__item
+            i.material-icons group
+            h3.navigation__subtitle  Пользователи
+            ul.navigation__sublist
+              li.navigation__subitem
+                a(href='#').navigation__reference  Активные
+                p.abbr АК
+              li.navigation__subitem
+                a(href='#').navigation__reference  Архив
+                p.abbr АР
+              li.navigation__subitem
+                a(href='#').navigation__reference  Отчеты
+                p.abbr ОТ
+              li.navigation__subitem
+                a(href='#').navigation__reference  Логи
+                p.abbr ЛО 
+          li.navigation__item
+            i.material-icons bar_chart
+            h3.navigation__subtitle Аналитика
+            ul.navigation__sublist
+              li.navigation__subitem
+                a(href='#').navigation__reference  Статистика
+                p.abbr СТ
+              li.navigation__subitem
+                a(href='#').navigation__reference  Шаблоны отчетов
+                p.abbr ШО
+              li.navigation__subitem
+                a(href='#').navigation__reference  Конструктор отчетов
+                p.abbr КО
+    //- main block
+    main.main
+      header.header
+        nav.header__menu
+          h2.header__menu__subtitle База данных:
+          ul.header__menu__list
+            li.header__menu__item
+              a.header__menu__link Записи
+            li.header__menu__item
+              a.header__menu__link.active Атрибуты
+            li.header__menu__item
+              a.header__menu__link Словари
+            li.header__menu__item
+              a.header__menu__link Выборки
+        div.header__login
+          p Иннокентий Виссарионович
+          button 
+            i.material-icons exit_to_app
+      div.main__content
+        form.main__content__form(action="#" method="post")
+          input.main__content__form__input 
+          button.main__content__form__button(type="button")
+            i.material-icons search
+          div.main__content__form__buttons
+            button.main__content__form__button Создать группу атрибутов
+            button.main__content__form__button(type="submit") Создать атрибут
+        .main__content__data
+          ul.tree
+            li <b>Черниговская</b> обл.
+              ul
+                li <b>Буковинский</b> р-н.
+                  ul
+                    li <strong>Чернигов</strong> м.
+                      ul 
+                        li <strong>Центральный</strong> мр-н
+                          ul
+                            li <strong>Тараса Шевченко</strong> вул.
+                              ul 
+                                li <strong>1-11, 39-58, 84-200</strong> буд.
+                                li <strong>13</strong> буд.
+                    li <strong>Напивчуба-Рубайло</strong> вул.
+                li <b>Нежинский</b> р-н.
+                  ul
+                    li <strong>Плавні</strong> с.
+                      ul
+                        li <strong>Нежинский</strong> мр-н
+                          ul
+                            li <strong>Ярослава Мудрого</strong> наб.
+                              ul
+                                li <strong>1</strong> буд.
+                                  ul
+                                    li <strong>1-20, 30-50, 60-70</strong> кв.
+                            li <strong>Чумацкий шлях</strong> б-р
+                              ul
+                                li <strong>1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21</strong> буд.

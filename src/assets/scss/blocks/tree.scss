@@ -1,0 +1,40 @@
+.tree {
+  font-size: 0.875rem;
+  color: transparentize($color-text, 0.4);
+  strong {
+    color: $color-text;
+  }
+  & li {
+    position: relative;
+    border-left: 1px solid transparentize($color-text, 0.4);
+    padding-left: 10px;
+    line-height: 1.5;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 7px;
+      height: 14px;
+      left: 0;
+      top: -4px;
+      border-bottom: 1px solid transparentize($color-text, 0.4);
+    }
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      left: -2px;
+      top: 8px;
+      background-color: transparentize($color-text, 0.4);
+      border-radius: 50%;
+    }
+    &:last-child {
+      border-left: none;
+      &::before {
+        border-left: 1px solid transparentize($color-text, 0.4);
+      }
+    }
+  }
+}

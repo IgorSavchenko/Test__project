@@ -1,0 +1,21 @@
+.logo {
+  background-color: $color-white;
+  margin-left: 5px;
+  transition: color 0.2s;
+  &__reference {
+    display: flex;
+    align-items: center;
+  }
+  &__title {
+    margin-left: 10px;
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  i {
+    font-size: 2rem;
+    @include desktop-min {
+      color: $color-blue;
+    }
+  }
+}
